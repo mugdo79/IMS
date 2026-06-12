@@ -1,0 +1,23 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Environment files (secrets) - never commit, .env.example files are allowed
+*.env*
+!**/.env.example
+
+# Subsystem build artifacts / dependencies
+# (each subsystem also has its own .gitignore; these are kept here for a
+# single top-level overview)
+frontend/node_modules/
+frontend/.next/
+backend/build/
+backend/.gradle/
+tile-server/.venv/
+tile-server/__pycache__/
+tile-server/.pytest_cache/
+tile-server/.ruff_cache/
